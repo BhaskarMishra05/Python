@@ -3,4 +3,4 @@ def country_function(country="Norway"):
 country_function("India")
 country_function("Sweden")
 country_function("Russia")
-country_function()
+country_function() #Default argument.
