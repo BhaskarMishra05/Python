@@ -42,5 +42,5 @@ for x in range(len(mytuple)):
 print("Loop ends here: ")
 print()
 #Count
-print("Counting the number of times a value occures in tuple",mytuple.count("A"))
+print("Counting the number of times a value occures in tuple [A]",mytuple.count("A"))
 print()
