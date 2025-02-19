@@ -7,6 +7,6 @@ class parent_class:
 class child_class(parent_class):
     pass
 # obj=parent_class() -> NO NEED TO CREATE AN OBJECT.
-print("Make a variable and store the vlaue of child_class in it.")
+print("Make a variable and store the value of child_class in it.")
 x = child_class("Bhaskar" , "Mishra")
-x.useless()
+x.useless() #Calling the required function.
