@@ -17,6 +17,5 @@ while guess<counter:
             print("Cold.")
     elif type_shii==random_number:
         print(f"Delicious. It took you {guess} tries")
-    elif guess > counter:
-        print(f"Unfortunatly you failed.The number was {random_number}")
+        
     
