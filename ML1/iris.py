@@ -29,3 +29,9 @@ print("Check accuracy")
 from sklearn.metrics import accuracy_score
 accuracy=accuracy_score(y_test,y_pred)
 print(f"Model accuracy: {accuracy* 100:.2f} %")
+print()
+speices_mapping={0: "Setosa", 1: "Versicolor", 2: "Virginica"}
+for actual,pred in zip(y_test[:100],y_pred[:100]):
+    actual_label=speices_mapping[actual]
+    pred_label=speices_mapping[pred]
+    print("Actual: " , actual_label , "Predicted: " ,pred_label)
