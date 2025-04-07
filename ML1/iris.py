@@ -35,3 +35,4 @@ for actual,pred in zip(y_test[:100],y_pred[:100]):
     actual_label=speices_mapping[actual]
     pred_label=speices_mapping[pred]
     print("Actual: " , actual_label , "Predicted: " ,pred_label)
+print(model.summary())
