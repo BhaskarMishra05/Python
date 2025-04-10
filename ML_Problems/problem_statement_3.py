@@ -1,3 +1,8 @@
+# You are given a dataset containing house sizes (in square feet) and
+# their corresponding prices. Your task is to build a Regression Model to predict 
+# house prices based on size.
+
+
 import numpy as np
 import pandas as pd
 np.random.seed(42)

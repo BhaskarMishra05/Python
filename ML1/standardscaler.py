@@ -15,3 +15,4 @@ pred=m.predict(x_test_scaled)
 from sklearn.metrics import accuracy_score
 acc=accuracy_score(y_test,pred)
 print(f"accuracy : {acc*100 :.2f}")
+
