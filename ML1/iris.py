@@ -30,8 +30,17 @@ from sklearn.metrics import accuracy_score
 accuracy=accuracy_score(y_test,y_pred)
 print(f"Model accuracy: {accuracy* 100:.2f} %")
 print()
-speices_mapping={0: "Setosa", 1: "Versicolor", 2: "Virginica"}
+species_mapping={0: "Setosa", 1: "Versicolor", 2: "Virginica"}
 for actual,pred in zip(y_test[:100],y_pred[:100]):
-    actual_label=speices_mapping[actual]
-    pred_label=speices_mapping[pred]
+    actual_label=species_mapping[actual]
+    pred_label=species_mapping[pred]
     print("Actual: " , actual_label , "Predicted: " ,pred_label)
+    
+print("\nEnter new data for prediction (sepal length, sepal width, petal length, petal width):")
+new_data = [float(input("Sepal Length: ")), float(input("Sepal Width: ")),
+            float(input("Petal Length: ")), float(input("Petal Width: "))]
+new_data = [new_data]  # Wrapping the input data as a list of lists to match the input format
+
+# Make prediction
+new_prediction = model.predict(new_data)
+print(f"Predicted Species: {species_mapping[new_prediction[0]]}")
