@@ -52,4 +52,4 @@ from sklearn.metrics import r2_score,mean_squared_error
 print(f'R2 score: {r2_score(y_test,prediction) *100 :.2f}')
 print(f'MSE: {mean_squared_error(y_test,prediction) :.2f}')
 for actual,predicted in zip(y_test[:10],prediction[:10]):
-    print(f'Actual: {actual :.2f}     | Predicted: {predicted :.2f}')
+       print(f'Actual: {actual :.2f}     | Predicted: {predicted :.2f}')

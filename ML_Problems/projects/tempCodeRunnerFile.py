@@ -1,0 +1,1 @@
+    print(f'Actual: {actual :.2f}     | Predicted: {predicted :.2f}')
